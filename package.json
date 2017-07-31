@@ -1,11 +1,15 @@
 {
-  "name": "aws-ome-sdk",
-  "version": "0.0.1",
+  "name": "@redbirdhq/aws-ome-sdk",
+  "version": "0.0.3",
   "description": "Get AWS client for online or offline/local execution of serverless Framework",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha test",
     "lint": "./node_modules/eslint/bin/eslint.js index.js; ./node_modules/eslint/bin/eslint.js --env mocha test/test.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedbirdHQ/aws-ome-sdk"
   },
   "keywords": [
     "aws",
