@@ -22,9 +22,10 @@ $ npm install --save aws-ome-sdk
 Use like [aws-sdk](https://github.com/aws/aws-sdk-js).
 
 ```javascript
-const AWS = require('aws-ome-sdk'); 
+const AWS = require('aws-ome-sdk');
 
 const ddb = AWS.DynamoDB();
+const ddbDoc = AWS.DynamoDB.DocumentClient();
 const s3 = AWS.S3();
 ```
 
@@ -37,4 +38,6 @@ $ npm run lint
 
 ## TODO
 
-More tests
+- More tests
+- Using `serverless.yml` variables to configure services (host/port)
+- Integration with other services that needs local configuration

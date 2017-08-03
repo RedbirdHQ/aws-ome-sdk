@@ -17,6 +17,20 @@ AWS.DynamoDB = function DynamoDB(params = {}) {
   return client;
 };
 
+AWS.DynamoDB.DocumentClient = function DynamoDBDocumentClient(params = {}) {
+  const options = params;
+
+  // connect to local DB if running offline
+  if (process.env.IS_OFFLINE) {
+    options.region = options.region ? options.region : 'localhost';
+    options.endpoint = options.endpoint ? options.endpoint : 'http://localhost:8000';
+  }
+
+  const client = new AWSDynamoDB.DocumentClient(options);
+
+  return client;
+};
+
 AWS.S3 = function S3(params = {}) {
   const options = params;
 
