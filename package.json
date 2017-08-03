@@ -1,6 +1,6 @@
 {
   "name": "@redbirdhq/aws-ome-sdk",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Get AWS client for online or offline/local execution of serverless Framework",
   "main": "index.js",
   "scripts": {

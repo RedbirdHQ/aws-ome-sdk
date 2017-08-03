@@ -38,6 +38,22 @@ describe('aws-ome-sdk', () => {
 
       done();
     });
+
+    it('should get DynamoDB Document client without parameters', (done) => {
+      const ddb = AWS.DynamoDB.DocumentClient();
+      assert.equal(ddb.options.region, undefined);
+      assert.equal(ddb.service.endpoint.href, 'https://dynamodb.undefined.amazonaws.com/');
+
+      done();
+    });
+
+    it('should get DynamoDB Document client with parameters', (done) => {
+      const ddb = AWS.DynamoDB.DocumentClient({ region: 'us-east-1' });
+      assert.equal(ddb.options.region, 'us-east-1');
+      assert.equal(ddb.service.endpoint.href, 'https://dynamodb.us-east-1.amazonaws.com/');
+
+      done();
+    });
   });
 
   describe('#offline mode', () => {
@@ -73,6 +89,22 @@ describe('aws-ome-sdk', () => {
       const ddb = AWS.DynamoDB({ region: 'localregion' });
       assert.equal(ddb.config.region, 'localregion');
       assert.equal(ddb.endpoint.href, 'http://localhost:8000/');
+
+      done();
+    });
+
+    it('should get DynamoDB Document client without parameters', (done) => {
+      const ddb = AWS.DynamoDB.DocumentClient();
+      assert.equal(ddb.options.region, 'localhost');
+      assert.equal(ddb.service.endpoint.href, 'http://localhost:8000/');
+
+      done();
+    });
+
+    it('should get DynamoDB Document client with parameters', (done) => {
+      const ddb = AWS.DynamoDB.DocumentClient({ region: 'localregion' });
+      assert.equal(ddb.options.region, 'localregion');
+      assert.equal(ddb.service.endpoint.href, 'http://localhost:8000/');
 
       done();
     });
