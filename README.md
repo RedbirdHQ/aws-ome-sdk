@@ -29,6 +29,17 @@ const ddbDoc = AWS.DynamoDB.DocumentClient();
 const s3 = AWS.S3();
 ```
 
+You can define local ports by setting these environment variables:
+```sh
+export LOCAL_DYNAMODB_PORT=8000;
+export LOCAL_S3_PORT=4569;
+```
+or in Node.js:
+```javascript
+process.env.LOCAL_DYNAMODB_PORT = 8000;
+process.env.LOCAL_S3_PORT = 4569;
+```
+
 ## How to test
 
 ```sh
@@ -39,5 +50,3 @@ $ npm run lint
 ## TODO
 
 - More tests
-- Using `serverless.yml` variables to configure services (host/port)
-- Integration with other services that needs local configuration
