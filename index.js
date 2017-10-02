@@ -11,7 +11,7 @@ AWS.DynamoDB = function DynamoDB(params = {}) {
   const options = params;
 
   // connect to local DB if running offline
-  if (process.env.IS_OFFLINE == 'true') {
+  if (process.env.IS_OFFLINE === 'true') {
     options.region = options.region || 'localhost';
     options.endpoint = options.endpoint || `http://localhost:${DYNAMODB_PORT}`;
   }
@@ -26,7 +26,7 @@ AWS.DynamoDB.DocumentClient = function DynamoDBDocumentClient(params = {}) {
   const options = params;
 
   // connect to local DB if running offline
-  if (process.env.IS_OFFLINE == 'true') {
+  if (process.env.IS_OFFLINE === 'true') {
     options.region = options.region || 'localhost';
     options.endpoint = options.endpoint || `http://localhost:${DYNAMODB_PORT}`;
   }
@@ -41,7 +41,7 @@ AWS.S3 = function S3(params = {}) {
   const options = params;
 
   // connect to local S3 if running offline
-  if (process.env.IS_OFFLINE == 'true') {
+  if (process.env.IS_OFFLINE === 'true') {
     options.s3ForcePathStyle = options.s3ForcePathStyle || true;
     options.endpoint = options.endpoint || new AWS.Endpoint(`http://localhost:${S3_PORT}`);
   }
