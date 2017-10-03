@@ -7,6 +7,12 @@ Using this package with [Serverless Framework](https://serverless.com/) and offl
 
 /!\ All plugins should be installed /!\
 
+## Warning
+
+This repository/package will no longer be maintained. It can easily be replaced by this util file:
+https://gist.github.com/ChristopheBougere/4fe9af102063607077990c7403fc1309
+This other method is simpler and more reliable!
+
 ## How to install
 
 Install all required serverless plugins.
