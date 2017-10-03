@@ -10,7 +10,9 @@ Using this package with [Serverless Framework](https://serverless.com/) and offl
 ## Warning
 
 This repository/package will no longer be maintained. It can easily be replaced by this util file:
-<script src="https://gist.github.com/ChristopheBougere/4fe9af102063607077990c7403fc1309.js"></script>
+
+https://gist.github.com/ChristopheBougere/4fe9af102063607077990c7403fc1309
+
 This other method is simpler and more reliable!
 
 ## How to install
