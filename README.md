@@ -2,7 +2,7 @@
 
 ## WARNING: this project as been deprecated
 
-This repository/package will no longer be maintained. We advice you to swith to standard [`aws-sdk`]() configuation.
+This repository/package will no longer be maintained. We advice you to swith to standard [`aws-sdk`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Config.html) configuation.
 
 Simpler and more reliable sample here: https://gist.github.com/ChristopheBougere/4fe9af102063607077990c7403fc1309
 
