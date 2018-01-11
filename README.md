@@ -1,19 +1,19 @@
 # AWS-OME-SDK
 
+## WARNING: this project as been deprecated
+
+This repository/package will no longer be maintained. We advice you to swith to standard [`aws-sdk`]() configuation.
+
+Simpler and more reliable sample here: https://gist.github.com/ChristopheBougere/4fe9af102063607077990c7403fc1309
+
+## Description
+
 Using this package with [Serverless Framework](https://serverless.com/) and offline/local extensions:
 - [serverless-offline](https://github.com/dherault/serverless-offline)
 - [serverless-dynamodb-local](https://github.com/99xt/serverless-dynamodb-local)
 - [serverless-s3-local](https://github.com/ar90n/serverless-s3-local)
 
 /!\ All plugins should be installed /!\
-
-## Warning
-
-This repository/package will no longer be maintained. It can easily be replaced by this util file:
-
-https://gist.github.com/ChristopheBougere/4fe9af102063607077990c7403fc1309
-
-This other method is simpler and more reliable!
 
 ## How to install
 
